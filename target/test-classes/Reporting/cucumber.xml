@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="95.347748">
+<testcase classname="Verifying the adactin functionalities" name="Verify user can able to book the hotel with valid credentials" time="34.660191">
+<system-out><![CDATA[Given user is on the adactin page...........................................passed
+When user should login using "divyamathi" and "BKX9A5"......................passed
+Then user should verify the login page......................................passed
+And user should search using "New York","Hotel Creek","Standard"............passed
+Then user should verify the search hotel page...............................passed
+And user should select the first hotel......................................passed
+And user should book hotel using "divya","m","kanchi","4251123521453659"....passed
+Then user should verify the book hotel page.................................passed
+And user can check the booking confirmation order in the page...............passed
+And user can cancel the booked hotel........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying the adactin functionalities" name="Verify user can able to book the hotel with valid credentials 2" time="20.438827">
+<system-out><![CDATA[Given user is on the adactin page...........................................passed
+When user should login using "kalaivinitha" and "W24133"....................passed
+Then user should verify the login page......................................passed
+And user should search using "Sydney","Hotel Creek","Double"................passed
+Then user should verify the search hotel page...............................passed
+And user should select the first hotel......................................passed
+And user should book hotel using "kalaivinitha","m","bangalore","4251123521453659".passed
+Then user should verify the book hotel page.................................passed
+And user can check the booking confirmation order in the page...............passed
+And user can cancel the booked hotel........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying the adactin functionalities" name="Verify user can able to book the hotel with valid credentials 3" time="19.88061">
+<system-out><![CDATA[Given user is on the adactin page...........................................passed
+When user should login using "edwinraj" and "edwin@123".....................passed
+Then user should verify the login page......................................passed
+And user should search using "New York","Hotel Creek","Deluxe"..............passed
+Then user should verify the search hotel page...............................passed
+And user should select the first hotel......................................passed
+And user should book hotel using "edwin","m","karnataka","1235411125252142".passed
+Then user should verify the book hotel page.................................passed
+And user can check the booking confirmation order in the page...............passed
+And user can cancel the booked hotel........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verifying the adactin functionalities" name="Verify user can able to book the hotel with valid credentials 4" time="20.36812">
+<system-out><![CDATA[Given user is on the adactin page...........................................passed
+When user should login using "sssaravinth30" and "Aravinth".................passed
+Then user should verify the login page......................................passed
+And user should search using "New York","Hotel Creek","Super Deluxe"........passed
+Then user should verify the search hotel page...............................passed
+And user should select the first hotel......................................passed
+And user should book hotel using "sssaravinth30","m","pondi","1235411125252142".passed
+Then user should verify the book hotel page.................................passed
+And user can check the booking confirmation order in the page...............passed
+And user can cancel the booked hotel........................................passed
+]]></system-out>
+</testcase>
+</testsuite>

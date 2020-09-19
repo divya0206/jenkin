@@ -1,0 +1,1185 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 33,
+        "name": "Verify user can able to book the hotel with valid credentials",
+        "description": "",
+        "id": "verifying-the-adactin-functionalities;verify-user-can-able-to-book-the-hotel-with-valid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 12503360100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on the adactin page",
+            "match": {
+              "location": "DataStepDefinition.user_is_on_the_adactin_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2024939300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user should login using \"divyamathi\" and \"BKX9A5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"divyamathi\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"BKX9A5\"",
+                  "offset": 41
+                }
+              ],
+              "location": "DataStepDefinition.user_should_login_using_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 150600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user should verify the login page",
+            "match": {
+              "location": "DataStepDefinition.user_should_verify_the_login_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1662382100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should search using \"New York\",\"Hotel Creek\",\"Standard\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"New York\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"Hotel Creek\"",
+                  "offset": 36
+                },
+                {
+                  "val": "\"Standard\"",
+                  "offset": 50
+                }
+              ],
+              "location": "DataStepDefinition.user_should_search_using(String,String,String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Roomno",
+                  "adultroom",
+                  "childroom"
+                ]
+              },
+              {
+                "cells": [
+                  "1 - One",
+                  "1 - One",
+                  "0 - None"
+                ]
+              },
+              {
+                "cells": [
+                  "2 - Two",
+                  "2 - Two",
+                  "1 - One"
+                ]
+              },
+              {
+                "cells": [
+                  "3 - Three",
+                  "2 - Two",
+                  "2 - Two"
+                ]
+              },
+              {
+                "cells": [
+                  "4 - Four",
+                  "4 - Four",
+                  "3 - Three"
+                ]
+              },
+              {
+                "cells": [
+                  "5 - Five",
+                  "3 - Three",
+                  "4 - Four"
+                ]
+              },
+              {
+                "cells": [
+                  "6 - Six",
+                  "3 - Three",
+                  "2 - Two"
+                ]
+              },
+              {
+                "cells": [
+                  "7 - Seven",
+                  "3 - Three",
+                  "2 - Two"
+                ]
+              },
+              {
+                "cells": [
+                  "8 - Eight",
+                  "3 - Three",
+                  "2 - Two"
+                ]
+              },
+              {
+                "cells": [
+                  "9 - Nine",
+                  "3 - Three",
+                  "2 - Two"
+                ]
+              },
+              {
+                "cells": [
+                  "10 - Ten",
+                  "3 - Three",
+                  "2 - Two"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 105500,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user should verify the search hotel page",
+            "match": {
+              "location": "DataStepDefinition.user_should_verify_the_search_hotel_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 773508800,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user should select the first hotel",
+            "match": {
+              "location": "DataStepDefinition.user_should_select_the_first_hotel()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1227664500,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user should book hotel using \"divya\",\"m\",\"kanchi\",\"4251123521453659\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"divya\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"m\"",
+                  "offset": 37
+                },
+                {
+                  "val": "\"kanchi\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\"4251123521453659\"",
+                  "offset": 50
+                }
+              ],
+              "location": "DataStepDefinition.user_should_book_hotel_using(String,String,String,String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "cardtype",
+                  "month",
+                  "year",
+                  "cvv"
+                ]
+              },
+              {
+                "cells": [
+                  "American Express",
+                  "June",
+                  "2022",
+                  "123"
+                ]
+              },
+              {
+                "cells": [
+                  "VISA",
+                  "March",
+                  "2021",
+                  "456"
+                ]
+              },
+              {
+                "cells": [
+                  "Master Card",
+                  "July",
+                  "2021",
+                  "123"
+                ]
+              },
+              {
+                "cells": [
+                  "Other",
+                  "July",
+                  "2023",
+                  "456"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 145800,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user should verify the book hotel page",
+            "match": {
+              "location": "DataStepDefinition.user_should_verify_the_book_hotel_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6282415200,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "user can check the booking confirmation order in the page",
+            "match": {
+              "location": "DataStepDefinition.user_can_check_the_booking_confirmation_order_in_the_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6244234700,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user can cancel the booked hotel",
+            "match": {
+              "location": "DataStepDefinition.user_can_cancel_the_booked_hotel()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 34,
+        "name": "Verify user can able to book the hotel with valid credentials",
+        "description": "",
+        "id": "verifying-the-adactin-functionalities;verify-user-can-able-to-book-the-hotel-with-valid-credentials;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3508300100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on the adactin page",
+            "match": {
+              "location": "DataStepDefinition.user_is_on_the_adactin_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1199991900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user should login using \"kalaivinitha\" and \"W24133\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"kalaivinitha\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"W24133\"",
+                  "offset": 43
+                }
+              ],
+              "location": "DataStepDefinition.user_should_login_using_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 216400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user should verify the login page",
+            "match": {
+              "location": "DataStepDefinition.user_should_verify_the_login_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1875069500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should search using \"Sydney\",\"Hotel Creek\",\"Double\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sydney\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"Hotel Creek\"",
+                  "offset": 34
+                },
+                {
+                  "val": "\"Double\"",
+                  "offset": 48
+                }
+              ],
+              "location": "DataStepDefinition.user_should_search_using(String,String,String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Roomno",
+                  "adultroom",
+                  "childroom"
+                ]
+              },
+              {
+                "cells": [
+                  "1 - One",
+                  "1 - One",
+                  "0 - None"
+                ]
+              },
+              {
+                "cells": [
+                  "2 - Two",
+                  "2 - Two",
+                  "1 - One"
+                ]
+              },
+              {
+                "cells": [
+                  "3 - Three",
+                  "2 - Two",
+                  "2 - Two"
+                ]
+              },
+              {
+                "cells": [
+                  "4 - Four",
+                  "4 - Four",
+                  "3 - Three"
+                ]
+              },
+              {
+                "cells": [
+                  "5 - Five",
+                  "3 - Three",
+                  "4 - Four"
+                ]
+              },
+              {
+                "cells": [
+                  "6 - Six",
+                  "3 - Three",
+                  "2 - Two"
+                ]
+              },
+              {
+                "cells": [
+                  "7 - Seven",
+                  "3 - Three",
+                  "2 - Two"
+                ]
+              },
+              {
+                "cells": [
+                  "8 - Eight",
+                  "3 - Three",
+                  "2 - Two"
+                ]
+              },
+              {
+                "cells": [
+                  "9 - Nine",
+                  "3 - Three",
+                  "2 - Two"
+                ]
+              },
+              {
+                "cells": [
+                  "10 - Ten",
+                  "3 - Three",
+                  "2 - Two"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 318000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user should verify the search hotel page",
+            "match": {
+              "location": "DataStepDefinition.user_should_verify_the_search_hotel_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 889613100,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user should select the first hotel",
+            "match": {
+              "location": "DataStepDefinition.user_should_select_the_first_hotel()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1733114200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user should book hotel using \"kalaivinitha\",\"m\",\"bangalore\",\"4251123521453659\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"kalaivinitha\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"m\"",
+                  "offset": 44
+                },
+                {
+                  "val": "\"bangalore\"",
+                  "offset": 48
+                },
+                {
+                  "val": "\"4251123521453659\"",
+                  "offset": 60
+                }
+              ],
+              "location": "DataStepDefinition.user_should_book_hotel_using(String,String,String,String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "cardtype",
+                  "month",
+                  "year",
+                  "cvv"
+                ]
+              },
+              {
+                "cells": [
+                  "American Express",
+                  "June",
+                  "2022",
+                  "123"
+                ]
+              },
+              {
+                "cells": [
+                  "VISA",
+                  "March",
+                  "2021",
+                  "456"
+                ]
+              },
+              {
+                "cells": [
+                  "Master Card",
+                  "July",
+                  "2021",
+                  "123"
+                ]
+              },
+              {
+                "cells": [
+                  "Other",
+                  "July",
+                  "2023",
+                  "456"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 210200,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user should verify the book hotel page",
+            "match": {
+              "location": "DataStepDefinition.user_should_verify_the_book_hotel_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5732253200,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "user can check the booking confirmation order in the page",
+            "match": {
+              "location": "DataStepDefinition.user_can_check_the_booking_confirmation_order_in_the_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6539668800,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user can cancel the booked hotel",
+            "match": {
+              "location": "DataStepDefinition.user_can_cancel_the_booked_hotel()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 35,
+        "name": "Verify user can able to book the hotel with valid credentials",
+        "description": "",
+        "id": "verifying-the-adactin-functionalities;verify-user-can-able-to-book-the-hotel-with-valid-credentials;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4881846600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on the adactin page",
+            "match": {
+              "location": "DataStepDefinition.user_is_on_the_adactin_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1272447200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user should login using \"edwinraj\" and \"edwin@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"edwinraj\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"edwin@123\"",
+                  "offset": 39
+                }
+              ],
+              "location": "DataStepDefinition.user_should_login_using_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 293200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user should verify the login page",
+            "match": {
+              "location": "DataStepDefinition.user_should_verify_the_login_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1962352200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should search using \"New York\",\"Hotel Creek\",\"Deluxe\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"New York\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"Hotel Creek\"",
+                  "offset": 36
+                },
+                {
+                  "val": "\"Deluxe\"",
+                  "offset": 50
+                }
+              ],
+              "location": "DataStepDefinition.user_should_search_using(String,String,String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Roomno",
+                  "adultroom",
+                  "childroom"
+                ]
+              },
+              {
+                "cells": [
+                  "1 - One",
+                  "1 - One",
+                  "0 - None"
+                ]
+              },
+              {
+                "cells": [
+                  "2 - Two",
+                  "2 - Two",
+                  "1 - One"
+                ]
+              },
+              {
+                "cells": [
+                  "3 - Three",
+                  "2 - Two",
+                  "2 - Two"
+                ]
+              },
+              {
+                "cells": [
+                  "4 - Four",
+                  "4 - Four",
+                  "3 - Three"
+                ]
+              },
+              {
+                "cells": [
+                  "5 - Five",
+                  "3 - Three",
+                  "4 - Four"
+                ]
+              },
+              {
+                "cells": [
+                  "6 - Six",
+                  "3 - Three",
+                  "2 - Two"
+                ]
+              },
+              {
+                "cells": [
+                  "7 - Seven",
+                  "3 - Three",
+                  "2 - Two"
+                ]
+              },
+              {
+                "cells": [
+                  "8 - Eight",
+                  "3 - Three",
+                  "2 - Two"
+                ]
+              },
+              {
+                "cells": [
+                  "9 - Nine",
+                  "3 - Three",
+                  "2 - Two"
+                ]
+              },
+              {
+                "cells": [
+                  "10 - Ten",
+                  "3 - Three",
+                  "2 - Two"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 168500,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user should verify the search hotel page",
+            "match": {
+              "location": "DataStepDefinition.user_should_verify_the_search_hotel_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 727720700,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user should select the first hotel",
+            "match": {
+              "location": "DataStepDefinition.user_should_select_the_first_hotel()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1348736900,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user should book hotel using \"edwin\",\"m\",\"karnataka\",\"1235411125252142\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"edwin\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"m\"",
+                  "offset": 37
+                },
+                {
+                  "val": "\"karnataka\"",
+                  "offset": 41
+                },
+                {
+                  "val": "\"1235411125252142\"",
+                  "offset": 53
+                }
+              ],
+              "location": "DataStepDefinition.user_should_book_hotel_using(String,String,String,String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "cardtype",
+                  "month",
+                  "year",
+                  "cvv"
+                ]
+              },
+              {
+                "cells": [
+                  "American Express",
+                  "June",
+                  "2022",
+                  "123"
+                ]
+              },
+              {
+                "cells": [
+                  "VISA",
+                  "March",
+                  "2021",
+                  "456"
+                ]
+              },
+              {
+                "cells": [
+                  "Master Card",
+                  "July",
+                  "2021",
+                  "123"
+                ]
+              },
+              {
+                "cells": [
+                  "Other",
+                  "July",
+                  "2023",
+                  "456"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 133900,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user should verify the book hotel page",
+            "match": {
+              "location": "DataStepDefinition.user_should_verify_the_book_hotel_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5572677200,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "user can check the booking confirmation order in the page",
+            "match": {
+              "location": "DataStepDefinition.user_can_check_the_booking_confirmation_order_in_the_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6503699800,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user can cancel the booked hotel",
+            "match": {
+              "location": "DataStepDefinition.user_can_cancel_the_booked_hotel()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 36,
+        "name": "Verify user can able to book the hotel with valid credentials",
+        "description": "",
+        "id": "verifying-the-adactin-functionalities;verify-user-can-able-to-book-the-hotel-with-valid-credentials;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5666135900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on the adactin page",
+            "match": {
+              "location": "DataStepDefinition.user_is_on_the_adactin_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1184249899,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user should login using \"sssaravinth30\" and \"Aravinth\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sssaravinth30\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"Aravinth\"",
+                  "offset": 44
+                }
+              ],
+              "location": "DataStepDefinition.user_should_login_using_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 296000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user should verify the login page",
+            "match": {
+              "location": "DataStepDefinition.user_should_verify_the_login_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1848993600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should search using \"New York\",\"Hotel Creek\",\"Super Deluxe\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"New York\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"Hotel Creek\"",
+                  "offset": 36
+                },
+                {
+                  "val": "\"Super Deluxe\"",
+                  "offset": 50
+                }
+              ],
+              "location": "DataStepDefinition.user_should_search_using(String,String,String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Roomno",
+                  "adultroom",
+                  "childroom"
+                ]
+              },
+              {
+                "cells": [
+                  "1 - One",
+                  "1 - One",
+                  "0 - None"
+                ]
+              },
+              {
+                "cells": [
+                  "2 - Two",
+                  "2 - Two",
+                  "1 - One"
+                ]
+              },
+              {
+                "cells": [
+                  "3 - Three",
+                  "2 - Two",
+                  "2 - Two"
+                ]
+              },
+              {
+                "cells": [
+                  "4 - Four",
+                  "4 - Four",
+                  "3 - Three"
+                ]
+              },
+              {
+                "cells": [
+                  "5 - Five",
+                  "3 - Three",
+                  "4 - Four"
+                ]
+              },
+              {
+                "cells": [
+                  "6 - Six",
+                  "3 - Three",
+                  "2 - Two"
+                ]
+              },
+              {
+                "cells": [
+                  "7 - Seven",
+                  "3 - Three",
+                  "2 - Two"
+                ]
+              },
+              {
+                "cells": [
+                  "8 - Eight",
+                  "3 - Three",
+                  "2 - Two"
+                ]
+              },
+              {
+                "cells": [
+                  "9 - Nine",
+                  "3 - Three",
+                  "2 - Two"
+                ]
+              },
+              {
+                "cells": [
+                  "10 - Ten",
+                  "3 - Three",
+                  "2 - Two"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 356601,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user should verify the search hotel page",
+            "match": {
+              "location": "DataStepDefinition.user_should_verify_the_search_hotel_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 840151700,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user should select the first hotel",
+            "match": {
+              "location": "DataStepDefinition.user_should_select_the_first_hotel()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1385355500,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user should book hotel using \"sssaravinth30\",\"m\",\"pondi\",\"1235411125252142\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sssaravinth30\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"m\"",
+                  "offset": 45
+                },
+                {
+                  "val": "\"pondi\"",
+                  "offset": 49
+                },
+                {
+                  "val": "\"1235411125252142\"",
+                  "offset": 57
+                }
+              ],
+              "location": "DataStepDefinition.user_should_book_hotel_using(String,String,String,String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "cardtype",
+                  "month",
+                  "year",
+                  "cvv"
+                ]
+              },
+              {
+                "cells": [
+                  "American Express",
+                  "June",
+                  "2022",
+                  "123"
+                ]
+              },
+              {
+                "cells": [
+                  "VISA",
+                  "March",
+                  "2021",
+                  "456"
+                ]
+              },
+              {
+                "cells": [
+                  "Master Card",
+                  "July",
+                  "2021",
+                  "123"
+                ]
+              },
+              {
+                "cells": [
+                  "Other",
+                  "July",
+                  "2023",
+                  "456"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 254199,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user should verify the book hotel page",
+            "match": {
+              "location": "DataStepDefinition.user_should_verify_the_book_hotel_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5672534600,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "user can check the booking confirmation order in the page",
+            "match": {
+              "location": "DataStepDefinition.user_can_check_the_booking_confirmation_order_in_the_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6840326100,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user can cancel the booked hotel",
+            "match": {
+              "location": "DataStepDefinition.user_can_cancel_the_booked_hotel()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Verifying the adactin functionalities",
+    "description": "",
+    "id": "verifying-the-adactin-functionalities",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/AllFeatures.feature",
+    "tags": []
+  }
+]
